@@ -4,8 +4,8 @@ En este proyecto realizo una base de datos y comienzo a trabajar el operador "Ag
 
 ## Documentos
 
-[Base de datos](https://linktodocumentation)
+[Base de datos](https://github.com/GonzalezJimenezSalvador/Proyecto04/blob/main/scr/Datos.js)
 
-[Consultas](https://linktodocumentation)
+[Consultas](https://github.com/GonzalezJimenezSalvador/Proyecto04/blob/main/scr/Consultas.js)
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://github.com/GonzalezJimenezSalvador/Proyecto04/blob/main/doc/Proyecto%20ventas%20MongoDB.pdf)
