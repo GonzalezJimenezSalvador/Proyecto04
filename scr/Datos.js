@@ -1,0 +1,41 @@
+db.ventas.drop()
+db.ventas.insertOne( 
+    {
+    deporte: "Baloncesto",
+    articulo: "Balón Baloncesto",
+    precioVenta: 5.99, 
+    precioFabrica: 3.99,
+    unidades: 40,
+    fechaVenta: new Date("2017,05,01"), 
+    fechaEntrega: new Date("2017,05,07"), 
+    comercial: "Francisco",
+    cliente: "IES Punta del Verde",
+    contraReembolso: false
+})
+db.ventas.insertMany([
+    {deporte: "Voleibol", articulo: "Balón Voleibol", precioVenta: 7.99, precioFabrica: 5.33, unidades: 15, fechaVenta: new Date("2017,06,15"), fechaEntrega: new Date("2017,06,17"), comercial: "Manuel", cliente: "IES Hermanos Machado", contraReembolso: false},
+    {deporte: "Baloncesto", articulo: "Balón Baloncesto", precioVenta: 5.99, precioFabrica: 3.99, unidades: 45, fechaVenta: new Date("2017,06,21"), fechaEntrega: new Date("2017,06,24"), comercial: "Jose", cliente: "IES Julio Verne", contraReembolso: false},
+    {deporte: "Voleibol", articulo: "Equipación Voleibol", precioVenta: 11.99, precioFabrica: 9.59, unidades: 21, fechaVenta: new Date("2017,07,12"), fechaEntrega: new Date("2017,07,16"), comercial: "Francisco", cliente: "IES Ramón del Valle Inclán", contraReembolso: true},
+    {deporte: "Voleibol", articulo: "Balón Voleibol", precioVenta: 7.99, precioFabrica: 5.33, unidades: 44, fechaVenta: new Date("2017,07,24"), fechaEntrega: new Date("2017,07,30"), comercial: "Carmen", cliente: "IES El Majuelo", contraReembolso: true},
+    {deporte: "Fútbol", articulo: "Equipación Fútbol", precioVenta: 14.99, precioFabrica: 11.99, unidades: 33, fechaVenta: new Date("2018,03,05"), fechaEntrega: new Date("2018,03,07"), comercial: "Ana", cliente: "IES Velazquez", contraReembolso: false},
+    {deporte: "Balonmano", articulo: "Balón Balonmano", precioVenta: 14.99, precioFabrica: 9.99, unidades: 35, fechaVenta: new Date("2018,03,14"), fechaEntrega: new Date("2018,03,16"), comercial: "Francisco", cliente: "IES Poligono Sur", contraReembolso: false},
+    {deporte: "Balonmano", articulo: "Equipación Balonmano", precioVenta: 11.49, precioFabrica: 9.19, unidades: 34, fechaVenta: new Date("2018,03,20"), fechaEntrega: new Date("2018,03,24"), comercial: "Ana", cliente: "IES Punta del Verde", contraReembolso: true},
+    {deporte: "Baloncesto", articulo: "Equipación Baloncesto", precioVenta: 13.99, precioFabrica: 11.19, unidades: 44, fechaVenta: new Date("2018,04,08"), fechaEntrega: new Date("2018,04,15"), comercial: "Francisco", cliente: "IES Ramón del Valle Inclán ", contraReembolso: true},
+    {deporte: "Voleibol", articulo: "Balón Voleibol", precioVenta: 7.99, precioFabrica: 5.33, unidades: 30, fechaVenta: new Date("2018,05,15"), fechaEntrega: new Date("2018,05,19"), comercial: "Manuel", cliente: "IES El Majuelo", contraReembolso: false},
+    {deporte: "Fútbol", articulo: "Balón Fútbol", precioVenta: 11.99, precioFabrica: 7.99, unidades: 45, fechaVenta: new Date("2018,07,14"), fechaEntrega: new Date("2018,07,21"), comercial: "Ana", cliente: "IES Martínez Montañés", contraReembolso: false},
+    {deporte: "Voleibol", articulo: "Balón Voleibol", precioVenta: 7.99, precioFabrica: 5.33, unidades: 31, fechaVenta: new Date("2018,08,02"), fechaEntrega: new Date("2018,08,04"), comercial: "Carmen", cliente: "IES Poligono Sur", contraReembolso: true},
+    {deporte: "Voleibol", articulo: "Equipación Voleibol", precioVenta: 11.99, precioFabrica: 9.59, unidades: 26, fechaVenta: new Date("2018,08,10"), fechaEntrega: new Date("2018,08,13"), comercial: "Ana", cliente: "IES Velazquez", contraReembolso: false},
+    {deporte: "Baloncesto", articulo: "Balón Baloncesto", precioVenta: 5.99, precioFabrica: 3.99, unidades: 28, fechaVenta: new Date("2018,09,20"), fechaEntrega: new Date("2018,09,22"), comercial: "Jose", cliente: "IES Julio Verne", contraReembolso: false},
+    {deporte: "Baloncesto", articulo: "Equipación Baloncesto", precioVenta: 13.99, precioFabrica: 11.19, unidades: 32, fechaVenta: new Date("2019,02,11"), fechaEntrega: new Date("2019,02,14"), comercial: "Manuel", cliente: "IES Ramón del Valle Inclán", contraReembolso: true},
+    {deporte: "Fútbol", articulo: "Balón Fútbol", precioVenta: 11.99, precioFabrica: 7.99, unidades: 36, fechaVenta: new Date("2019,03,21"), fechaEntrega: new Date("2019,03,25"), comercial: "Ana", cliente: "IES Velazquez", contraReembolso: false},
+    {deporte: "Fútbol", articulo: "Balón Fútbol", precioVenta: 11.99, precioFabrica: 7.99, unidades: 24, fechaVenta: new Date("2019,04,01"), fechaEntrega: new Date("2019,04,09"), comercial: "Manuel", cliente: "IES Punta del Verde", contraReembolso: false},
+    {deporte: "Voleibol", articulo: "Equipación Voleibol", precioVenta: 11.99, precioFabrica: 9.59, unidades: 38, fechaVenta: new Date("2019,04,23"), fechaEntrega: new Date("2019,04,27"), comercial: "Jose", cliente: "IES Poligono Sur", contraReembolso: true},
+    {deporte: "Fútbol", articulo: "Balón Fútbol", precioVenta: 11.99, precioFabrica: 7.99, unidades: 32, fechaVenta: new Date("2019,05,06"), fechaEntrega: new Date("2019,05,10"), comercial: "Francisco", cliente: "IES El Majuelo", contraReembolso: true},
+    {deporte: "Baloncesto", articulo: "Equipación Baloncesto", precioVenta: 13.99, precioFabrica: 11.19, unidades: 25, fechaVenta: new Date("2019,05,09"), fechaEntrega: new Date("2019,04,11"), comercial: "Carmen", cliente: "IES Poligono Sur", contraReembolso: true},
+    {deporte: "Baloncesto", articulo: "Balón Baloncesto", precioVenta: 5.99, precioFabrica: 3.99, unidades: 45, fechaVenta: new Date("2019,06,18"), fechaEntrega: new Date("2019,06,22"), comercial: "Manuel", cliente: "IES Hermanos Machado", contraReembolso: false},
+    {deporte: "Baloncesto", articulo: "Equipación Baloncesto", precioVenta: 13.99, precioFabrica: 11.19, unidades: 38, fechaVenta: new Date("2019,07,07"), fechaEntrega: new Date("2019,07,13"), comercial: "Carmen", cliente: "IES Punta del Verde", contraReembolso: false},
+    {deporte: "Fútbol", articulo: "Balón Fútbol", precioVenta: 11.99, precioFabrica: 7.99, unidades: 18, fechaVenta: new Date("2019,08,02"), fechaEntrega: new Date("2019,08,04"), comercial: "Francisco", cliente: "IES Punta del Verde", contraReembolso: true},
+    {deporte: "Voleibol", articulo: "Balón Voleibol", precioVenta: 7.99, precioFabrica: 5.33, unidades: 39, fechaVenta: new Date("2019,08,29"), fechaEntrega: new Date("2019,09,01"), comercial: "Francisco", cliente: "IES El Majuelo", contraReembolso: true},
+    {deporte: "Balonmano", articulo: "Balón Balonmano", precioVenta: 14.99, precioFabrica: 9.99, unidades: 23, fechaVenta: new Date("2019,10,05"), fechaEntrega: new Date("2019,10,11"), comercial: "Carmen", cliente: "IES Velazquez", contraReembolso: false},
+    {deporte: "Fútbol", articulo: "Equipación Fútbol", precioVenta: 14.99, precioFabrica: 11.99, unidades: 28, fechaVenta: new Date("2019,10,15"), fechaEntrega: new Date("2019,10,19"), comercial: "Carmen", cliente: "IES Poligono Sur", contraReembolso: true},
+])
